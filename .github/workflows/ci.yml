@@ -37,6 +37,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+        submodules: true
 
     - name: Setup
       run: |
