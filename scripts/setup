@@ -22,7 +22,7 @@ case ${UNAME_S} in
 		;;
 	Darwin*)
 		brew install \
-			cmake \
+			homebrew/cask/cmake \
 			llvm \
 			ninja
 		BIN_DIR=${HOME}/.local/bin
