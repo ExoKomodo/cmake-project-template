@@ -1,4 +1,4 @@
-#include <division.h>
+#include <division.hpp>
 #include <iostream>
 
 using namespace std;

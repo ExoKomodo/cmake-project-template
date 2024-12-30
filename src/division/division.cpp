@@ -2,7 +2,7 @@
 // Created by Konstantin Gredeskoul on 5/14/17.
 //
 
-#include "division.h"
+#include "division.hpp"
 
 DivisionResult Division::divide() {
   if (fraction.denominator == 0L)

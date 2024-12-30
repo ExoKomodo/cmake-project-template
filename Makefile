@@ -68,7 +68,7 @@ setup: ./scripts/setup ## Setup dependencies for system
 	@$<
 
 SOURCE_FILES := $(shell find ./src -type f -name '*.cpp')
-HEADER_FILES := $(shell find ./src -type f -name '*.h')
+HEADER_FILES := $(shell find ./src -type f -name '*.hpp')
 
 .PHONY: format
 format: ## Format the C/C++ code
