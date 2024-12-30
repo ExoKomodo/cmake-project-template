@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.31)
-project(divider)
+project(greeter)
 
-include_directories(division)
-add_subdirectory(division)
+add_subdirectory(hello)
 set(SOURCE_FILES main.cpp)
 
-add_executable(divider ${SOURCE_FILES})
-target_link_libraries(divider division)
-# install(TARGETS divider DESTINATION ${DIVISIBLE_INSTALL_BIN_DIR})
+add_executable(greeter ${SOURCE_FILES})
+target_include_directories(
+    greeter
+    PUBLIC ${INCLUDE_DIR_hello})
+target_link_libraries(greeter hello)

@@ -5,6 +5,7 @@ project(cmake-project-template)
 set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR})
+set(INCLUDE_DIR_hello ${PROJECT_SOURCE_DIR}/include)
 
 add_subdirectory(src)
 
