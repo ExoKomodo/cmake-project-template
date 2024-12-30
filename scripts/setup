@@ -21,7 +21,7 @@ case ${UNAME_S} in
 		fi
 		;;
 	Darwin*)
-		brew install \
+		brew install --force \
 			homebrew/cask/cmake \
 			llvm \
 			ninja
