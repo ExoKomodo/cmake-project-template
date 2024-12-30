@@ -41,7 +41,7 @@ jobs:
     - name: Setup
       run: |
         echo ${HOME}/.local/bin >> ${GITHUB_PATH}
-        sudo make setup
+        make setup
 
     - name: Configure
       run: make configure
