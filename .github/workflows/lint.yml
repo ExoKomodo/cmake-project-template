@@ -11,17 +11,15 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 1
-        submodules: false
+        submodules: true
 
     - name: Setup
       run: |
         echo ${HOME}/.local/bin >> ${GITHUB_PATH}
         make setup
 
-    # - name: Build
-    #   run: |
-    #     make configure build
+    - name: Configure
+      run: make configure
 
     - name: Lint
-      run: |
-        make lint
+      run: make lint
